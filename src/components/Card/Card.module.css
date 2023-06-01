@@ -1,0 +1,128 @@
+  
+.wrapperCard {
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.753);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
+  width: 320px;
+  height: 600px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid white;
+  transition: box-shadow 0.6s ease-in-out;
+}
+
+.wrapperCard:hover {
+  box-shadow: 0 0 20px rgba(243, 240, 240, 0.8);
+  transform: translateY(-2px);
+}
+
+.wrapperCard > * {
+  margin: 10px; /* Ajusta el valor de margen según tus necesidades */
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.cruz {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cruz::before,
+.cruz::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 2px;
+  background-color: #fff;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cruz::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cruz::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cruz:hover::before,
+.cruz:hover::after {
+  transform: translate(-50%, -50%) scale(1.1) rotate(45deg);
+}
+
+@keyframes textAnimation {
+    0% {
+      color: rgb(243, 242, 242);
+      transform: translateX(0);
+    }
+    50% {
+      color: rgb(255, 255, 255);
+      transform: translateX(10px);
+    }
+    100% {
+      color: rgb(243, 242, 242);
+      transform: translateX(0);
+    }
+  }
+  
+  .name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(247, 242, 242);
+    /* animation: textAnimation 2s infinite; */
+    transition: color 0.6s ease-in-out;
+  }
+  
+  .name:hover {
+    color: rgb(252, 248, 248);
+    animation-play-state: paused; /* Pausa la animación al pasar el cursor */
+  }
+    
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  .description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; /* Ajusta el tamaño de fuente según tus necesidades */
+    color: rgb(153, 154, 248); /* Color de texto */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Efecto de sombra */
+    font-style: italic; /* Estilo cursivo */
+    transition: color 0.6s ease-in-out;
+  }
+  
+  .description:hover {
+    color: rgb(252, 248, 248); /* Cambia el color de texto al pasar el mouse por encima */
+    animation-play-state: paused; /* Pausa la animación al pasar el cursor */
+  }
+  
+        
+
+.imagen {
+    border: 4px solid transparent; /* Borde grueso transparente */
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8); /* Efecto luminoso */
+    border-radius: 50%; /* Borde redondeado */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+    width: 200px; /* Anchura deseada */
+    height: 200px; /* Altura deseada */
+  }
+    
+  .imagen:hover {
+    transform: scale(1.1); /* Escala al hacer hover */
+  }
+
+  button {
+    margin-bottom: 15px; /* Separación entre el botón y la imagen */
+  }
+  
