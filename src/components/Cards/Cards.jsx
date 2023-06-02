@@ -7,7 +7,7 @@ export default function Cards(props){
    return <div className={styles.mainDiv}>
       {characters.map((char)=>{
          return(
-            <Card 
+            <Card  
             id={char.id }
             key={char.id}
             name={char.name}

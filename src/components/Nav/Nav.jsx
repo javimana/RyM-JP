@@ -15,6 +15,10 @@ const Nav = (props)=>{
             <NavLink to={ROUTES.HOME}>
                 <button>Home</button>
             </NavLink>            
+
+            <NavLink to={ROUTES.FAVORITES}>
+                <button>Favorites</button>
+            </NavLink>            
     
         </div>
     )
