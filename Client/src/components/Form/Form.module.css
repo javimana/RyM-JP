@@ -1,0 +1,57 @@
+  /* form.module.css */
+
+.centeredContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .centeredForm {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.353); /* Cambiar el color de fondo a negro con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  }
+    
+  .formGroup {
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  .formInput {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  /* Botón Submit */
+  .formSubmit {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formSubmit:hover {
+    background-color: #0056b3;
+  }
+
+  /* Botón Invitado */
+  
+  .buttonInvitado {
+    width: 50%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttonInvitado:hover {
+    background-color: #850303;
+  }

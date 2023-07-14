@@ -1,3 +1,53 @@
-.NavMain{
+.NavMain {
+    display: flex;
+    justify-content: flex-end;
+    background-color:transparent;
+  }
+  
+  .buttonContainer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+  }
+  
+  .favoritesButton,
+  .aboutButton,
+  .homeButton,
+  
+  .button {
     background-color: transparent;
-}
+    border: 0px solid white; /* Agrega bordes blancos */
+    border-radius: 20px; /* Agrega bordes redondeados */
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .favoritesButton:hover,
+  .aboutButton:hover,
+  .homeButton:hover,
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .handleClearAll {
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 20px;
+    border-radius: 20px; /* Agrega bordes redondeados */
+    background-color: transparent;
+    border: 0px solid white;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .handleClearAll:hover {
+    background-color: white;
+    color: black;
+  }
+  

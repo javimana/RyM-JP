@@ -5,3 +5,41 @@
     justify-content: space-around;
     text-align: center;
 }
+
+.ascDesc{
+    position: fixed;
+    top: 4%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    /* border: 0.5px solid white; */
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  
+
+}
+
+.opciones{
+    position: fixed;
+    top: 4%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    /* border: 0.5px solid white; */
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  
+
+}
+
+
+.ascDesc:hover,
+.opciones:hover,
+.button:hover {
+  background-color: white;
+  color: black;
+}

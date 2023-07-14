@@ -1,21 +1,13 @@
-.App {
-   /* width: 100vw;
-   height: 100vh; 
-   text-align: center;
-   background-repeat: no-repeat;
-   background-size: 100% ;    */
-   
-
-   /* text-align: center;
-   background-image: url('./components/Images/fondo01.jpg');
-   margin: 0 auto;
-   background-repeat: no-repeat;
-   background-size: 100vw;
-   background-attachment: fixed;
-   text-align: center;
-   display: flex;
-   flex-direction: column; */
-
-   
-   
-}
+.about-style {
+   margin-top: 10px;
+   margin-left: 15px;
+ }
+ 
+ .detail-style {
+   margin-top: 10px;
+ }
+ 
+ .favorites-style {
+   margin-top: 10px;
+ }
+ 

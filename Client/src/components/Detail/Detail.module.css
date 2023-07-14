@@ -1,0 +1,22 @@
+.characterInfo {
+  
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.464);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cursiva';
+    src: url('../Fonts/get_schwifty.ttf') format('truetype');
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  .characterImage {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  

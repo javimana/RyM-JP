@@ -21,13 +21,13 @@ const Favorites = (props) => {
 
   return (
     <div className={styles.mainDiv}>
-      <div>
+      <div className={styles.ascDesc}>
         <select onChange={handleOrder}>
           <option value="A">Ascendente</option>
           <option value="D">Descendente</option>
         </select>
       </div>
-      <div>
+      <div className={styles.opciones}>
         <select onChange={handleFilter}>
           <option value="Male">Male</option>
           <option value="Female">Female</option>

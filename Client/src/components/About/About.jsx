@@ -1,7 +1,11 @@
+import styles from '../About/About.module.css'
+
 const About = ()=>{
     return(
-         <div>
-            <h1> ABOUT Javier Pereyra Curso Henry </h1>
+         <div className={styles.about}>
+            <h1> Javier Pereyra </h1>
+            <h1> Henry Course </h1>
+            <h1> 2023 </h1>
          </div>
     )
 };

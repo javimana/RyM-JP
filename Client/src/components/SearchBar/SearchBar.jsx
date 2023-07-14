@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function SearchBar(props) {
 
-   const {onSearch} = props;
+   const {onSearch,onSearchRandom, logout} = props;
 
    const [id, setId] = useState('');
 
@@ -16,7 +16,9 @@ export default function SearchBar(props) {
    return (
       <div className={styles.checkbox}>
          <input type='search' onChange={handleChange} value={id}/>
-         <button onClick={()=>{onSearch(id)}} className={styles.button}>Agregar</button>
+         <button onClick={()=>{onSearch(id)}} className={styles.buttonAgregar}>Add</button>
+         <button onClick={()=>{onSearchRandom()}} className={styles.buttonAleatorio}>Random</button>
+         <button onClick={() => {logout()}} className={styles.buttonLogout}>Logout</button>
       </div>
    );
 }

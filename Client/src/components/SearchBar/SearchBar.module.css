@@ -1,65 +1,73 @@
-.button {
-  background-color: transparent; /* Color de fondo inicial del botón */
-  border: none;
-  color: #fff;
+/* .button{
+    margin-top: 17px;
+    margin-left: 5px;
+    margin-right:300px;
+}
+
+.checkbox{
+margin-left: 100px;
+} */
+
+.buttonLogout {
+  margin-top: 12px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-radius: 20px; /* Agrega bordes redondeados */
+  background-color:rgb(197, 19, 19);
+  border: 0px solid white;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  color: white;
   padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  font-size: x-large;
-  border-radius: 18px; /* Ajusta el valor según tus necesidades */
-  margin-top: 20px; /* Ajusta el valor según tus necesidades */
-  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8); /* Efecto luminoso */
+  transition: background-color 0.3s;
 }
 
-.button:hover {
-  background-color: rgb(255, 255, 255); /* Cambia el color de fondo al pasar el mouse por encima */
-  color: #000; /* Cambia el color de texto al pasar el mouse por encima */
+.buttonLogout:hover {
+  background-color: white;
+  color: black;
 }
 
-.button::before,
-.button::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+
+
+.buttonAgregar {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 40px;
+  border-radius: 20px; /* Agrega bordes redondeados */
+  background-color: transparent;
+  border: 0px solid white;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
 }
 
-.button::before {
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  animation-name: borderGlow1;
+.buttonAgregar:hover {
+  background-color: white;
+  color: black;
 }
 
-.button::after {
-  border: 4px solid rgba(255, 255, 255, 0.5);
-  animation-name: borderGlow2;
-}
-  
-    
 .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0px; /* Ajusta el valor según tus necesidades */
+  margin-left: 100px;
 }
+.buttonAleatorio {
+  /* position: fixed; */
+  top: 20px;
+  right: 20px;
+  transform: translate(-50%, 0);
+  z-index: 9999;
 
-.checkbox input[type='search'] {
-  width: 350px; /* Ajusta el ancho del checkbox según tus necesidades */
-  height: 40px; /* Ajusta la altura del checkbox según tus necesidades */
-  border-radius: 18px; /* Ajusta el valor según tus necesidades */
-  text-align: center; /* Centra el texto ingresado */
-  font-size: larger;
+  margin-top: 4.5px;
+  margin-left: 10px;
+  margin-right: 1px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 0px solid white;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
 }
-
-.checkbox button {
-  width: 200px; /* Ajusta el ancho del botón según tus necesidades */
-  height: 50px; /* Ajusta la altura del botón según tus necesidades */
-  /* Otros estilos adicionales para el botón */
+.buttonAleatorio:hover {
+  background-color: white;
+  color: black;
 }

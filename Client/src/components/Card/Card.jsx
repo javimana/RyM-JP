@@ -1,8 +1,8 @@
-import styles from "./Card.module.css";
-import { Link } from "react-router-dom";
-import { addFav, removeFav } from "../../redux/actions";
+import { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { addFav, removeFav } from "../../redux/actions";
+import styles from "./Card.module.css";
 
 function Card(props) {
   const {
@@ -11,7 +11,7 @@ function Card(props) {
     status,
     species,
     gender,
-   //  origin,
+    //  origin,
     image,
     onClose,
     addFav,
@@ -20,6 +20,8 @@ function Card(props) {
   } = props;
 
   const [isFav, setIsFav] = useState(false);
+  const { pathname } = useLocation();
+  console.log(pathname);
 
   const handleFavorite = () => {
     isFav ? removeFav(id) : addFav(props);
@@ -37,11 +39,22 @@ function Card(props) {
   return (
     <div className={styles.wrapperCard}>
       {isFav ? (
-        <button onClick={handleFavorite}>❤️</button>
+        <button onClick={handleFavorite} className={styles.heartButton}>
+          ❤️
+        </button>
       ) : (
-        <button onClick={handleFavorite}>🤍</button>
+        <button onClick={handleFavorite} className={styles.heartButton}>
+          🤍
+        </button>
       )}
-      <button onClick={() => {onClose(id);}} className={styles.cruz}>X</button>
+      {/* <button onClick={() => {onClose(id)}} className={styles.cruz}>X</button> */}
+      {pathname !== "/favorites" ? (
+        <button className={styles.cruz} onClick={() => onClose(id)}>
+          X
+        </button>
+      ) : (
+        <button className={styles.cruz}>X</button>
+      )}
 
       <img src={image} alt={name} className={styles.imagen} />
 
@@ -55,7 +68,6 @@ function Card(props) {
         <h2>{status}</h2>
         <h2>{species}</h2>
         <h2>{gender}</h2>
-        {/* <h2>{origin}</h2> */}
       </div>
     </div>
   );

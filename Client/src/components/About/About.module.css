@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Cursiva';
+  src: url('../Fonts/get_schwifty.ttf') format('truetype');
+}
+
+.about {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.464);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Cursiva', sans-serif; /* Utiliza la fuente personalizada */
+  font-size: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  animation: textAnimation 2s infinite alternate;
+}
+
+@keyframes textAnimation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Inicia con sombra */
+    transform: translateX(0); /* Inicia sin movimiento */
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Termina con sombra más intensa */
+    transform: translateX(10px); /* Termina con movimiento hacia la derecha */
+  }
+}
+
+.about h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: shadowAnimation 2s infinite alternate; /* Agrega animación a la sombra */
+}
+
+@keyframes shadowAnimation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Inicia con sombra */
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Termina con sombra más intensa */
+  }
+}
